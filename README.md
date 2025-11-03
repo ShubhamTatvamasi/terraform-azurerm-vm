@@ -5,7 +5,7 @@ List account subscriptions:
 az account list -o table
 ```
 
-Update subscription_id in terraform.tfvars file:
+Update **subscription_id** in `terraform.tfvars` file:
 ```bash
 cat > terraform.tfvars << EOF
 subscription_id = $(az account list --query "[0].id")
