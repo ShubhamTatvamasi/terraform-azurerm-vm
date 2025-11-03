@@ -34,7 +34,8 @@ variable "subscription_id" {
 }
 
 variable "allowed_ports" {
-  type = map(number)
+  description = "Map of allowed ports for network security group."
+  type        = map(number)
   default = {
     ssh   = 22
     http  = 80
