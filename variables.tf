@@ -13,7 +13,7 @@ variable "location" {
 variable "vm_size" {
   description = "The size of the virtual machine."
   type        = string
-  default     = "Standard_B1s"
+  default     = "Standard_B2ats_v2"
 }
 
 variable "ssh_public_key" {
