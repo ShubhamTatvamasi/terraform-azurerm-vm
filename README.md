@@ -11,7 +11,7 @@ cat > terraform.tfvars << EOF
 subscription_id = $(az account list --query "[0].id")
 EOF
 ```
-> Add `vm_size = "Standard_B4as_v2"` if you want to use a B-series VM.
+> Add `vm_size = "Standard_B4als_v2"` if you want to use a B-series VM.
 
 ---
 
