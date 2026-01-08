@@ -27,7 +27,7 @@ terraform apply -auto-approve
 
 SSH into the VM:
 ```bash
-ssh azureuser@$(terraform output -raw public_ip)
+ssh ubuntu@$(terraform output -raw public_ip)
 ```
 
 Destroy the instance:
